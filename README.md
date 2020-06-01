@@ -9,7 +9,7 @@
 ```sh
 $ cd ./
 $ make  # make the host execution program
-$ aoc ./device/shj.cl -o ./bin/shj.aocx  # make the FPGA execution program. It takes time.
+$ aoc ./device/shj.cl -g --fp-relaxed --report --board bdw_fpga_v1.0 -o ./bin/shj.aocx  # make the FPGA execution program. It takes time.
 $ cd ./bin
 $ ./host
 ```

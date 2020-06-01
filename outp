@@ -1,0 +1,24 @@
+Target:device/shj.cl
+Basename:shj
+aoc shj.cl -g --fp-relaxed --report --board bdw_fpga_v1.0
+aoc: Selected target board bdw_fpga_v1.0
+In file included from <built-in>:11140:
+<command line>:2:30: warning: ISO C99 requires whitespace after the macro name
+#define ACL_BOARD_bdw_fpga_v1.0 1
+                             ^
+<command line>:3:31: warning: ISO C99 requires whitespace after the macro name
+#define AOCL_BOARD_bdw_fpga_v1.0 1
+                              ^
+2 warnings generated.
+
++--------------------------------------------------------------------+
+; Estimated Resource Usage Summary                                   ;
++----------------------------------------+---------------------------+
+; Resource                               + Usage                     ;
++----------------------------------------+---------------------------+
+; Logic utilization                      ;   89%                     ;
+; ALUTs                                  ;   36%                     ;
+; Dedicated logic registers              ;   53%                     ;
+; Memory blocks                          ;   99%                     ;
+; DSP blocks                             ;   12%                     ;
++----------------------------------------+---------------------------;

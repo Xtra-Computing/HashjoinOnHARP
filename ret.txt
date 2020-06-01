@@ -1,0 +1,144 @@
+RADIX 1
+The compiled files have been sent to harp machine.
+/upb/departments/pc2/users/x/xchen/for_harp_run/phj_partition_radix
+Num of radix bits = 1
+S R Ratio = 1
+Creating host buffers.
+tmpRelR size 0 MB 
+tmpRelS size 5120 MB 
+create dataset
+fanOut 2
+Partitioning 963385602 cycles 
+[INFO] Partitioning time is: 407.890745 ms
+RADIX 2
+The compiled files have been sent to harp machine.
+/upb/departments/pc2/users/x/xchen/for_harp_run/phj_partition_radix
+Num of radix bits = 2
+S R Ratio = 1
+Creating host buffers.
+tmpRelR size 0 MB 
+tmpRelS size 5120 MB 
+create dataset
+fanOut 4
+Partitioning 964086130 cycles 
+[INFO] Partitioning time is: 407.511488 ms
+RADIX 3
+The compiled files have been sent to harp machine.
+/upb/departments/pc2/users/x/xchen/for_harp_run/phj_partition_radix
+Num of radix bits = 3
+S R Ratio = 1
+Creating host buffers.
+tmpRelR size 0 MB 
+tmpRelS size 5120 MB 
+create dataset
+fanOut 8
+Partitioning 957601884 cycles 
+[INFO] Partitioning time is: 404.710345 ms
+RADIX 4
+The compiled files have been sent to harp machine.
+/upb/departments/pc2/users/x/xchen/for_harp_run/phj_partition_radix
+Num of radix bits = 4
+S R Ratio = 1
+Creating host buffers.
+tmpRelR size 0 MB 
+tmpRelS size 5120 MB 
+create dataset
+fanOut 16
+Partitioning 998796585 cycles 
+[INFO] Partitioning time is: 421.422683 ms
+RADIX 5
+The compiled files have been sent to harp machine.
+/upb/departments/pc2/users/x/xchen/for_harp_run/phj_partition_radix
+Num of radix bits = 5
+S R Ratio = 1
+Creating host buffers.
+tmpRelR size 0 MB 
+tmpRelS size 5120 MB 
+create dataset
+fanOut 32
+Partitioning 990653326 cycles 
+[INFO] Partitioning time is: 418.358184 ms
+RADIX 6
+The compiled files have been sent to harp machine.
+/upb/departments/pc2/users/x/xchen/for_harp_run/phj_partition_radix
+Num of radix bits = 6
+S R Ratio = 1
+Creating host buffers.
+tmpRelR size 0 MB 
+tmpRelS size 5120 MB 
+create dataset
+fanOut 64
+Partitioning 1044051575 cycles 
+[INFO] Partitioning time is: 440.434106 ms
+RADIX 7
+The compiled files have been sent to harp machine.
+/upb/departments/pc2/users/x/xchen/for_harp_run/phj_partition_radix
+Num of radix bits = 7
+S R Ratio = 1
+Creating host buffers.
+tmpRelR size 0 MB 
+tmpRelS size 5120 MB 
+create dataset
+fanOut 128
+Partitioning 990327038 cycles 
+[INFO] Partitioning time is: 418.333541 ms
+RADIX 8
+The compiled files have been sent to harp machine.
+/upb/departments/pc2/users/x/xchen/for_harp_run/phj_partition_radix
+Num of radix bits = 8
+S R Ratio = 1
+Creating host buffers.
+tmpRelR size 0 MB 
+tmpRelS size 5120 MB 
+create dataset
+fanOut 256
+Partitioning 1066049093 cycles 
+[INFO] Partitioning time is: 449.526066 ms
+RADIX 9
+The compiled files have been sent to harp machine.
+/upb/departments/pc2/users/x/xchen/for_harp_run/phj_partition_radix
+Num of radix bits = 9
+S R Ratio = 1
+Creating host buffers.
+tmpRelR size 0 MB 
+tmpRelS size 5120 MB 
+create dataset
+fanOut 512
+Partitioning 1022065506 cycles 
+[INFO] Partitioning time is: 431.778691 ms
+RADIX 10
+The compiled files have been sent to harp machine.
+/upb/departments/pc2/users/x/xchen/for_harp_run/phj_partition_radix
+Num of radix bits = 10
+S R Ratio = 1
+Creating host buffers.
+tmpRelR size 0 MB 
+tmpRelS size 5120 MB 
+create dataset
+fanOut 1024
+Partitioning 1375538460 cycles 
+[INFO] Partitioning time is: 578.814469 ms
+RADIX 11
+The compiled files have been sent to harp machine.
+/upb/departments/pc2/users/x/xchen/for_harp_run/phj_partition_radix
+Num of radix bits = 11
+S R Ratio = 1
+Creating host buffers.
+tmpRelR size 0 MB 
+tmpRelS size 5120 MB 
+create dataset
+fanOut 2048
+Partitioning 1314289879 cycles 
+[INFO] Partitioning time is: 554.079524 ms
+RADIX 12
+The compiled files have been sent to harp machine.
+/upb/departments/pc2/users/x/xchen/for_harp_run/phj_partition_radix
+Num of radix bits = 12
+S R Ratio = 1
+Creating host buffers.
+tmpRelR size 0 MB 
+tmpRelS size 5120 MB 
+create dataset
+fanOut 4096
+Partitioning 1134028637 cycles 
+[INFO] Partitioning time is: 478.930709 ms

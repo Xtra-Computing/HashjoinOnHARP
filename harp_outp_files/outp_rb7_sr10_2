@@ -1,0 +1,14 @@
+Num of radix bits = 7
+S R Ratio = 10
+Creating host buffers.
+tmpRelR size 256 MB 
+tmpRelS size 2560 MB 
+fanOut 128
+Partitioning 492656394 cycles 
+[INFO] Partitioning time is: 211.685383 ms
+Creating hash join kernel
+Launching the kernels...
+[INFO] Begin processing on FPGA
+[INFO] FPGA runtime is: 253.301064 ms
+[INFO] Throughput is 1457.154369 MTEPS
+No of matches - 33553408 

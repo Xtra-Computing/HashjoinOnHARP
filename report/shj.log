@@ -1,0 +1,495 @@
+In file included from <built-in>:11140:
+<command line>:2:30: warning: ISO C99 requires whitespace after the macro name
+#define ACL_BOARD_bdw_fpga_v1.0 1
+                             ^
+<command line>:3:31: warning: ISO C99 requires whitespace after the macro name
+#define AOCL_BOARD_bdw_fpga_v1.0 1
+                              ^
+2 warnings generated.
+=========================================================================================================
+                                   *** Optimization Report ***                                        
+
+Kernels that do not use any work-item built-in functions, such as get_global_id(), are compiled for single
+work-item execution (a task). Otherwise, a kernel is compiled as an ND-Range.
+
+For tasks, the compiler will attempt to pipeline every loop in the kernel to allow multiple iterations of
+the loop to execute concurrently. If some loops are not pipelined, or not pipelined well, you may not get
+good performance.
+
+For ND-Range kernels, the loops are not pipelined. Instead, they are built to accept multiple work-items
+simultaneously. Kernel throughput is usually reduced by the largest total number of iterations of nested
+loops. A large number of threads is usually required to efficiently utilize ND-Range kernels.
+
+=========================================================================================================
+Kernel: relRead                                                                                          
+=========================================================================================================
+The kernel is compiled for single work-item execution.
+
+Loop Report:
+
+ + Loop "Block1" (file shj.cl line 108)
+ | Pipelined well. Successive iterations are launched every cycle.
+ | 
+ | 
+ |-+ Fully unrolled loop (file shj.cl line 161)
+     Loop was fully unrolled due to "#pragma unroll" annotation.
+     
+     
+ + Loop "Block2" (file shj.cl line 192)
+   Pipelined well. Successive iterations are launched every cycle.
+   
+   
+=========================================================================================================
+Kernel: gather                                                                                           
+=========================================================================================================
+The kernel is compiled for single work-item execution.
+
+Loop Report:
+
+ + Loop "Block5"
+ | Pipelined well. Successive iterations are launched every cycle.
+ | 
+ | 
+ |-+ Fully unrolled loop (file shj.cl line 523)
+ |   Loop was fully unrolled due to "#pragma unroll" annotation.
+ |   
+ |   
+ |-+ Fully unrolled loop (file shj.cl line 528)
+   | Loop was fully unrolled due to "#pragma unroll" annotation.
+   | 
+   | 
+   |-+ Fully unrolled loop (file shj.cl line 538)
+   |   Loop was fully unrolled due to "#pragma unroll" annotation.
+   |   
+   |   
+   |-+ Fully unrolled loop (file shj.cl line 543)
+   |   Loop was fully unrolled due to "#pragma unroll" annotation.
+   |   
+   |   
+   |-+ Fully unrolled loop (file shj.cl line 602)
+       Loop was fully unrolled due to "#pragma unroll" annotation.
+       
+       
+ + Fully unrolled loop (file shj.cl line 523)
+   Loop was fully unrolled due to "#pragma unroll" annotation.
+   
+   
+ + Fully unrolled loop (file shj.cl line 528)
+ | Loop was fully unrolled due to "#pragma unroll" annotation.
+ | 
+ | 
+ |-+ Fully unrolled loop (file shj.cl line 538)
+ |   Loop was fully unrolled due to "#pragma unroll" annotation.
+ |   
+ |   
+ |-+ Fully unrolled loop (file shj.cl line 543)
+ |   Loop was fully unrolled due to "#pragma unroll" annotation.
+ |   
+ |   
+ |-+ Fully unrolled loop (file shj.cl line 602)
+     Loop was fully unrolled due to "#pragma unroll" annotation.
+     
+     
+=========================================================================================================
+Kernel: filter                                                                                           
+=========================================================================================================
+The kernel is compiled for single work-item execution.
+
+Loop Report:
+
+ + Loop "Block8"
+ | Pipelined well. Successive iterations are launched every cycle.
+ | 
+ | 
+ |-+ Loop "Block9" (file shj.cl line 623)
+     Pipelined well. Successive iterations are launched every cycle.
+     
+     
+=========================================================================================================
+Kernel: filter1                                                                                          
+=========================================================================================================
+The kernel is compiled for single work-item execution.
+
+Loop Report:
+
+ + Loop "Block12"
+ | Pipelined well. Successive iterations are launched every cycle.
+ | 
+ | 
+ |-+ Loop "Block13" (file shj.cl line 638)
+     Pipelined well. Successive iterations are launched every cycle.
+     
+     
+=========================================================================================================
+Kernel: filter2                                                                                          
+=========================================================================================================
+The kernel is compiled for single work-item execution.
+
+Loop Report:
+
+ + Loop "Block16"
+ | Pipelined well. Successive iterations are launched every cycle.
+ | 
+ | 
+ |-+ Loop "Block17" (file shj.cl line 653)
+     Pipelined well. Successive iterations are launched every cycle.
+     
+     
+=========================================================================================================
+Kernel: filter3                                                                                          
+=========================================================================================================
+The kernel is compiled for single work-item execution.
+
+Loop Report:
+
+ + Loop "Block20"
+ | Pipelined well. Successive iterations are launched every cycle.
+ | 
+ | 
+ |-+ Loop "Block21" (file shj.cl line 668)
+     Pipelined well. Successive iterations are launched every cycle.
+     
+     
+=========================================================================================================
+Kernel: filter4                                                                                          
+=========================================================================================================
+The kernel is compiled for single work-item execution.
+
+Loop Report:
+
+ + Loop "Block24"
+ | Pipelined well. Successive iterations are launched every cycle.
+ | 
+ | 
+ |-+ Loop "Block25" (file shj.cl line 683)
+     Pipelined well. Successive iterations are launched every cycle.
+     
+     
+=========================================================================================================
+Kernel: filter5                                                                                          
+=========================================================================================================
+The kernel is compiled for single work-item execution.
+
+Loop Report:
+
+ + Loop "Block28"
+ | Pipelined well. Successive iterations are launched every cycle.
+ | 
+ | 
+ |-+ Loop "Block29" (file shj.cl line 698)
+     Pipelined well. Successive iterations are launched every cycle.
+     
+     
+=========================================================================================================
+Kernel: filter6                                                                                          
+=========================================================================================================
+The kernel is compiled for single work-item execution.
+
+Loop Report:
+
+ + Loop "Block32"
+ | Pipelined well. Successive iterations are launched every cycle.
+ | 
+ | 
+ |-+ Loop "Block33" (file shj.cl line 713)
+     Pipelined well. Successive iterations are launched every cycle.
+     
+     
+=========================================================================================================
+Kernel: filter7                                                                                          
+=========================================================================================================
+The kernel is compiled for single work-item execution.
+
+Loop Report:
+
+ + Loop "Block36"
+ | Pipelined well. Successive iterations are launched every cycle.
+ | 
+ | 
+ |-+ Loop "Block37" (file shj.cl line 728)
+     Pipelined well. Successive iterations are launched every cycle.
+     
+     
+=========================================================================================================
+Kernel: hashjoin                                                                                         
+=========================================================================================================
+The kernel is compiled for single work-item execution.
+
+Loop Report:
+
+ + Fully unrolled loop (file shj.cl line 756)
+   Loop was fully unrolled due to "#pragma unroll" annotation.
+   
+   
+ + Loop "Block39" (file shj.cl line 795, line 796)
+   Pipelined well. Successive iterations are launched every cycle.
+   
+   
+ + Fully unrolled loop (file shj.cl line 809)
+ | Loop was fully unrolled due to "#pragma unroll" annotation.
+ | 
+ | 
+ |-+ Fully unrolled loop (file shj.cl line 814)
+     Loop was fully unrolled due to "#pragma unroll" annotation.
+     
+     
+ + Loop "Block40" (file shj.cl line 858, line 864)
+   Pipelined well. Successive iterations are launched every cycle.
+   
+   
+ + Fully unrolled loop (file shj.cl line 869)
+ | Loop was fully unrolled due to "#pragma unroll" annotation.
+ | 
+ | 
+ |-+ Fully unrolled loop (file shj.cl line 871)
+     Loop was fully unrolled due to "#pragma unroll" annotation.
+     
+     
+=========================================================================================================
+
++--------------------------------------------------------------------+
+; Estimated Resource Usage Summary                                   ;
++----------------------------------------+---------------------------+
+; Resource                               + Usage                     ;
++----------------------------------------+---------------------------+
+; Logic utilization                      ;   89%                     ;
+; ALUTs                                  ;   36%                     ;
+; Dedicated logic registers              ;   53%                     ;
+; Memory blocks                          ;   99%                     ;
+; DSP blocks                             ;   12%                     ;
++----------------------------------------+---------------------------;
+System name: shj
+
+2019.04.24.11:52:50 Info: Doing: <b>qsys-script --script=kernel_system.tcl --Xmx512M --XX:+UseSerialGC</b>
+2019.04.24.11:53:00 Info: set_validation_property AUTOMATIC_VALIDATION false
+2019.04.24.11:53:00 Info: add_instance clk_1x altera_clock_bridge 
+2019.04.24.11:53:03 Info: set_instance_parameter_value clk_1x EXPLICIT_CLOCK_RATE 0
+2019.04.24.11:53:03 Info: set_instance_parameter_value clk_1x NUM_CLOCK_OUTPUTS 1
+2019.04.24.11:53:03 Info: add_interface clock_reset clock sink
+2019.04.24.11:53:03 Info: set_interface_property clock_reset EXPORT_OF clk_1x.in_clk
+2019.04.24.11:53:03 Info: add_instance clk_2x altera_clock_bridge 
+2019.04.24.11:53:03 Info: set_instance_parameter_value clk_2x EXPLICIT_CLOCK_RATE 0
+2019.04.24.11:53:03 Info: set_instance_parameter_value clk_2x NUM_CLOCK_OUTPUTS 1
+2019.04.24.11:53:03 Info: add_interface clock_reset2x clock sink
+2019.04.24.11:53:03 Info: set_interface_property clock_reset2x EXPORT_OF clk_2x.in_clk
+2019.04.24.11:53:03 Info: add_instance reset altera_reset_bridge 
+2019.04.24.11:53:03 Info: set_instance_parameter_value reset ACTIVE_LOW_RESET 1
+2019.04.24.11:53:03 Info: set_instance_parameter_value reset SYNCHRONOUS_EDGES deassert
+2019.04.24.11:53:03 Info: set_instance_parameter_value reset NUM_RESET_OUTPUTS 1
+2019.04.24.11:53:03 Info: add_interface clock_reset_reset reset sink
+2019.04.24.11:53:03 Info: set_interface_property clock_reset_reset EXPORT_OF reset.in_reset
+2019.04.24.11:53:03 Info: add_connection clk_1x.out_clk reset.clk
+2019.04.24.11:53:03 Info: add_instance shj_system shj_system 
+2019.04.24.11:53:04 Info: add_connection clk_1x.out_clk shj_system.clock_reset
+2019.04.24.11:53:04 Info: add_connection clk_2x.out_clk shj_system.clock_reset2x
+2019.04.24.11:53:04 Info: add_connection reset.out_reset shj_system.clock_reset_reset
+2019.04.24.11:53:04 Info: add_instance avmm_r altera_avalon_mm_bridge 
+2019.04.24.11:53:04 Info: set_instance_parameter_value avmm_r DATA_WIDTH 512
+2019.04.24.11:53:04 Info: set_instance_parameter_value avmm_r SYMBOL_WIDTH 8
+2019.04.24.11:53:04 Info: set_instance_parameter_value avmm_r ADDRESS_WIDTH 48
+2019.04.24.11:53:04 Info: set_instance_parameter_value avmm_r USE_AUTO_ADDRESS_WIDTH 0
+2019.04.24.11:53:04 Info: set_instance_parameter_value avmm_r ADDRESS_UNITS SYMBOLS
+2019.04.24.11:53:04 Info: set_instance_parameter_value avmm_r MAX_BURST_SIZE 16
+2019.04.24.11:53:04 Info: set_instance_parameter_value avmm_r MAX_PENDING_RESPONSES 64
+2019.04.24.11:53:04 Info: set_instance_parameter_value avmm_r LINEWRAPBURSTS 0
+2019.04.24.11:53:04 Info: set_instance_parameter_value avmm_r PIPELINE_COMMAND 1
+2019.04.24.11:53:04 Info: set_instance_parameter_value avmm_r PIPELINE_RESPONSE 1
+2019.04.24.11:53:04 Info: add_connection clk_1x.out_clk avmm_r.clk
+2019.04.24.11:53:04 Info: add_connection reset.out_reset avmm_r.reset
+2019.04.24.11:53:04 Info: add_interface avmm_r avalon slave
+2019.04.24.11:53:04 Info: set_interface_property avmm_r EXPORT_OF avmm_r.m0
+2019.04.24.11:53:04 Info: add_instance avmm_w altera_avalon_mm_bridge 
+2019.04.24.11:53:04 Info: set_instance_parameter_value avmm_w DATA_WIDTH 512
+2019.04.24.11:53:04 Info: set_instance_parameter_value avmm_w SYMBOL_WIDTH 8
+2019.04.24.11:53:04 Info: set_instance_parameter_value avmm_w ADDRESS_WIDTH 48
+2019.04.24.11:53:04 Info: set_instance_parameter_value avmm_w USE_AUTO_ADDRESS_WIDTH 0
+2019.04.24.11:53:04 Info: set_instance_parameter_value avmm_w ADDRESS_UNITS SYMBOLS
+2019.04.24.11:53:04 Info: set_instance_parameter_value avmm_w MAX_BURST_SIZE 16
+2019.04.24.11:53:04 Info: set_instance_parameter_value avmm_w MAX_PENDING_RESPONSES 64
+2019.04.24.11:53:04 Info: set_instance_parameter_value avmm_w LINEWRAPBURSTS 0
+2019.04.24.11:53:04 Info: set_instance_parameter_value avmm_w PIPELINE_COMMAND 1
+2019.04.24.11:53:04 Info: set_instance_parameter_value avmm_w PIPELINE_RESPONSE 1
+2019.04.24.11:53:04 Info: add_connection clk_1x.out_clk avmm_w.clk
+2019.04.24.11:53:04 Info: add_connection reset.out_reset avmm_w.reset
+2019.04.24.11:53:04 Info: add_interface avmm_w avalon slave
+2019.04.24.11:53:04 Info: set_interface_property avmm_w EXPORT_OF avmm_w.m0
+2019.04.24.11:53:04 Info: add_connection shj_system.avm_memgmem0_port_0_0_r avmm_r.s0
+2019.04.24.11:53:04 Info: add_connection shj_system.avm_memgmem0_port_0_0_w avmm_w.s0
+2019.04.24.11:53:04 Info: add_instance kernel_irq altera_irq_bridge 
+2019.04.24.11:53:04 Info: set_instance_parameter_value kernel_irq IRQ_WIDTH 1
+2019.04.24.11:53:04 Info: set_instance_parameter_value kernel_irq IRQ_N 0
+2019.04.24.11:53:04 Info: add_interface kernel_irq irq sender
+2019.04.24.11:53:04 Info: set_interface_property kernel_irq EXPORT_OF kernel_irq.sender0_irq
+2019.04.24.11:53:04 Info: add_connection clk_1x.out_clk kernel_irq.clk
+2019.04.24.11:53:04 Info: add_connection reset.out_reset kernel_irq.clk_reset
+2019.04.24.11:53:04 Info: add_connection kernel_irq.receiver_irq shj_system.kernel_irq
+2019.04.24.11:53:04 Info: add_instance kernel_cra altera_avalon_mm_bridge 
+2019.04.24.11:53:04 Info: set_instance_parameter_value kernel_cra DATA_WIDTH 64
+2019.04.24.11:53:04 Info: set_instance_parameter_value kernel_cra SYMBOL_WIDTH 8
+2019.04.24.11:53:04 Info: set_instance_parameter_value kernel_cra ADDRESS_WIDTH 30
+2019.04.24.11:53:04 Info: set_instance_parameter_value kernel_cra USE_AUTO_ADDRESS_WIDTH 0
+2019.04.24.11:53:04 Info: set_instance_parameter_value kernel_cra ADDRESS_UNITS SYMBOLS
+2019.04.24.11:53:04 Info: set_instance_parameter_value kernel_cra MAX_BURST_SIZE 1
+2019.04.24.11:53:04 Info: set_instance_parameter_value kernel_cra MAX_PENDING_RESPONSES 1
+2019.04.24.11:53:04 Info: set_instance_parameter_value kernel_cra LINEWRAPBURSTS 0
+2019.04.24.11:53:04 Info: set_instance_parameter_value kernel_cra PIPELINE_COMMAND 0
+2019.04.24.11:53:04 Info: set_instance_parameter_value kernel_cra PIPELINE_RESPONSE 0
+2019.04.24.11:53:04 Info: add_connection clk_1x.out_clk kernel_cra.clk
+2019.04.24.11:53:04 Info: add_connection reset.out_reset kernel_cra.reset
+2019.04.24.11:53:04 Info: add_interface avs_kernel_cra avalon slave
+2019.04.24.11:53:04 Info: set_interface_property kernel_cra EXPORT_OF kernel_cra.s0
+2019.04.24.11:53:04 Info: add_instance cra_root cra_ring_root 
+2019.04.24.11:53:04 Info: set_instance_parameter_value cra_root DATA_W 64
+2019.04.24.11:53:04 Info: set_instance_parameter_value cra_root ADDR_W 5
+2019.04.24.11:53:04 Info: set_instance_parameter_value cra_root ID_W 4
+2019.04.24.11:53:04 Info: set_instance_parameter_value cra_root ROM_ENABLE 1
+2019.04.24.11:53:04 Info: add_connection clk_1x.out_clk cra_root.clock
+2019.04.24.11:53:04 Info: add_connection reset.out_reset cra_root.reset
+2019.04.24.11:53:04 Info: add_connection kernel_cra.m0 cra_root.cra_slave
+2019.04.24.11:53:04 Info: set_connection_parameter_value kernel_cra.m0/cra_root.cra_slave baseAddress 0x0
+2019.04.24.11:53:04 Info: add_instance cra_ring_rom cra_ring_rom 
+2019.04.24.11:53:04 Info: set_instance_parameter_value cra_ring_rom DATA_W 64
+2019.04.24.11:53:04 Info: set_instance_parameter_value cra_ring_rom RING_ADDR_W 5
+2019.04.24.11:53:04 Info: set_instance_parameter_value cra_ring_rom ID_W 4
+2019.04.24.11:53:04 Info: add_connection cra_root.ring_out cra_ring_rom.ring_in
+2019.04.24.11:53:04 Info: add_connection clk_1x.out_clk cra_ring_rom.clock
+2019.04.24.11:53:04 Info: add_connection reset.out_reset cra_ring_rom.reset
+2019.04.24.11:53:04 Info: add_instance avs_relRead_cra_cra_ring cra_ring_node 
+2019.04.24.11:53:05 Info: set_instance_parameter_value avs_relRead_cra_cra_ring DATA_W 64
+2019.04.24.11:53:05 Info: set_instance_parameter_value avs_relRead_cra_cra_ring RING_ADDR_W 5
+2019.04.24.11:53:05 Info: set_instance_parameter_value avs_relRead_cra_cra_ring CRA_ADDR_W 5
+2019.04.24.11:53:05 Info: set_instance_parameter_value avs_relRead_cra_cra_ring ID_W 4
+2019.04.24.11:53:05 Info: set_instance_parameter_value avs_relRead_cra_cra_ring ID 0
+2019.04.24.11:53:05 Info: add_connection clk_1x.out_clk avs_relRead_cra_cra_ring.clock
+2019.04.24.11:53:05 Info: add_connection reset.out_reset avs_relRead_cra_cra_ring.reset
+2019.04.24.11:53:05 Info: add_connection cra_ring_rom.ring_out avs_relRead_cra_cra_ring.ring_in
+2019.04.24.11:53:05 Info: add_connection avs_relRead_cra_cra_ring.cra_master shj_system.avs_relRead_cra
+2019.04.24.11:53:05 Info: set_connection_parameter_value avs_relRead_cra_cra_ring.cra_master/shj_system.avs_relRead_cra baseAddress 0x0
+2019.04.24.11:53:05 Info: add_instance avs_gather_cra_cra_ring cra_ring_node 
+2019.04.24.11:53:05 Info: set_instance_parameter_value avs_gather_cra_cra_ring DATA_W 64
+2019.04.24.11:53:05 Info: set_instance_parameter_value avs_gather_cra_cra_ring RING_ADDR_W 5
+2019.04.24.11:53:05 Info: set_instance_parameter_value avs_gather_cra_cra_ring CRA_ADDR_W 4
+2019.04.24.11:53:05 Info: set_instance_parameter_value avs_gather_cra_cra_ring ID_W 4
+2019.04.24.11:53:05 Info: set_instance_parameter_value avs_gather_cra_cra_ring ID 1
+2019.04.24.11:53:05 Info: add_connection clk_1x.out_clk avs_gather_cra_cra_ring.clock
+2019.04.24.11:53:05 Info: add_connection reset.out_reset avs_gather_cra_cra_ring.reset
+2019.04.24.11:53:05 Info: add_connection avs_relRead_cra_cra_ring.ring_out avs_gather_cra_cra_ring.ring_in
+2019.04.24.11:53:05 Info: add_connection avs_gather_cra_cra_ring.cra_master shj_system.avs_gather_cra
+2019.04.24.11:53:05 Info: set_connection_parameter_value avs_gather_cra_cra_ring.cra_master/shj_system.avs_gather_cra baseAddress 0x0
+2019.04.24.11:53:05 Info: add_instance avs_filter_cra_cra_ring cra_ring_node 
+2019.04.24.11:53:05 Info: set_instance_parameter_value avs_filter_cra_cra_ring DATA_W 64
+2019.04.24.11:53:05 Info: set_instance_parameter_value avs_filter_cra_cra_ring RING_ADDR_W 5
+2019.04.24.11:53:05 Info: set_instance_parameter_value avs_filter_cra_cra_ring CRA_ADDR_W 4
+2019.04.24.11:53:05 Info: set_instance_parameter_value avs_filter_cra_cra_ring ID_W 4
+2019.04.24.11:53:05 Info: set_instance_parameter_value avs_filter_cra_cra_ring ID 2
+2019.04.24.11:53:05 Info: add_connection clk_1x.out_clk avs_filter_cra_cra_ring.clock
+2019.04.24.11:53:05 Info: add_connection reset.out_reset avs_filter_cra_cra_ring.reset
+2019.04.24.11:53:05 Info: add_connection avs_gather_cra_cra_ring.ring_out avs_filter_cra_cra_ring.ring_in
+2019.04.24.11:53:05 Info: add_connection avs_filter_cra_cra_ring.cra_master shj_system.avs_filter_cra
+2019.04.24.11:53:05 Info: set_connection_parameter_value avs_filter_cra_cra_ring.cra_master/shj_system.avs_filter_cra baseAddress 0x0
+2019.04.24.11:53:05 Info: add_instance avs_filter1_cra_cra_ring cra_ring_node 
+2019.04.24.11:53:05 Info: set_instance_parameter_value avs_filter1_cra_cra_ring DATA_W 64
+2019.04.24.11:53:05 Info: set_instance_parameter_value avs_filter1_cra_cra_ring RING_ADDR_W 5
+2019.04.24.11:53:05 Info: set_instance_parameter_value avs_filter1_cra_cra_ring CRA_ADDR_W 4
+2019.04.24.11:53:05 Info: set_instance_parameter_value avs_filter1_cra_cra_ring ID_W 4
+2019.04.24.11:53:05 Info: set_instance_parameter_value avs_filter1_cra_cra_ring ID 3
+2019.04.24.11:53:05 Info: add_connection clk_1x.out_clk avs_filter1_cra_cra_ring.clock
+2019.04.24.11:53:05 Info: add_connection reset.out_reset avs_filter1_cra_cra_ring.reset
+2019.04.24.11:53:05 Info: add_connection avs_filter_cra_cra_ring.ring_out avs_filter1_cra_cra_ring.ring_in
+2019.04.24.11:53:05 Info: add_connection avs_filter1_cra_cra_ring.cra_master shj_system.avs_filter1_cra
+2019.04.24.11:53:05 Info: set_connection_parameter_value avs_filter1_cra_cra_ring.cra_master/shj_system.avs_filter1_cra baseAddress 0x0
+2019.04.24.11:53:05 Info: add_instance avs_filter2_cra_cra_ring cra_ring_node 
+2019.04.24.11:53:05 Info: set_instance_parameter_value avs_filter2_cra_cra_ring DATA_W 64
+2019.04.24.11:53:05 Info: set_instance_parameter_value avs_filter2_cra_cra_ring RING_ADDR_W 5
+2019.04.24.11:53:05 Info: set_instance_parameter_value avs_filter2_cra_cra_ring CRA_ADDR_W 4
+2019.04.24.11:53:05 Info: set_instance_parameter_value avs_filter2_cra_cra_ring ID_W 4
+2019.04.24.11:53:05 Info: set_instance_parameter_value avs_filter2_cra_cra_ring ID 4
+2019.04.24.11:53:05 Info: add_connection clk_1x.out_clk avs_filter2_cra_cra_ring.clock
+2019.04.24.11:53:05 Info: add_connection reset.out_reset avs_filter2_cra_cra_ring.reset
+2019.04.24.11:53:05 Info: add_connection avs_filter1_cra_cra_ring.ring_out avs_filter2_cra_cra_ring.ring_in
+2019.04.24.11:53:05 Info: add_connection avs_filter2_cra_cra_ring.cra_master shj_system.avs_filter2_cra
+2019.04.24.11:53:05 Info: set_connection_parameter_value avs_filter2_cra_cra_ring.cra_master/shj_system.avs_filter2_cra baseAddress 0x0
+2019.04.24.11:53:05 Info: add_instance avs_filter3_cra_cra_ring cra_ring_node 
+2019.04.24.11:53:05 Info: set_instance_parameter_value avs_filter3_cra_cra_ring DATA_W 64
+2019.04.24.11:53:05 Info: set_instance_parameter_value avs_filter3_cra_cra_ring RING_ADDR_W 5
+2019.04.24.11:53:05 Info: set_instance_parameter_value avs_filter3_cra_cra_ring CRA_ADDR_W 4
+2019.04.24.11:53:05 Info: set_instance_parameter_value avs_filter3_cra_cra_ring ID_W 4
+2019.04.24.11:53:05 Info: set_instance_parameter_value avs_filter3_cra_cra_ring ID 5
+2019.04.24.11:53:05 Info: add_connection clk_1x.out_clk avs_filter3_cra_cra_ring.clock
+2019.04.24.11:53:05 Info: add_connection reset.out_reset avs_filter3_cra_cra_ring.reset
+2019.04.24.11:53:05 Info: add_connection avs_filter2_cra_cra_ring.ring_out avs_filter3_cra_cra_ring.ring_in
+2019.04.24.11:53:05 Info: add_connection avs_filter3_cra_cra_ring.cra_master shj_system.avs_filter3_cra
+2019.04.24.11:53:05 Info: set_connection_parameter_value avs_filter3_cra_cra_ring.cra_master/shj_system.avs_filter3_cra baseAddress 0x0
+2019.04.24.11:53:05 Info: add_instance avs_filter4_cra_cra_ring cra_ring_node 
+2019.04.24.11:53:05 Info: set_instance_parameter_value avs_filter4_cra_cra_ring DATA_W 64
+2019.04.24.11:53:05 Info: set_instance_parameter_value avs_filter4_cra_cra_ring RING_ADDR_W 5
+2019.04.24.11:53:05 Info: set_instance_parameter_value avs_filter4_cra_cra_ring CRA_ADDR_W 4
+2019.04.24.11:53:05 Info: set_instance_parameter_value avs_filter4_cra_cra_ring ID_W 4
+2019.04.24.11:53:05 Info: set_instance_parameter_value avs_filter4_cra_cra_ring ID 6
+2019.04.24.11:53:05 Info: add_connection clk_1x.out_clk avs_filter4_cra_cra_ring.clock
+2019.04.24.11:53:05 Info: add_connection reset.out_reset avs_filter4_cra_cra_ring.reset
+2019.04.24.11:53:05 Info: add_connection avs_filter3_cra_cra_ring.ring_out avs_filter4_cra_cra_ring.ring_in
+2019.04.24.11:53:05 Info: add_connection avs_filter4_cra_cra_ring.cra_master shj_system.avs_filter4_cra
+2019.04.24.11:53:05 Info: set_connection_parameter_value avs_filter4_cra_cra_ring.cra_master/shj_system.avs_filter4_cra baseAddress 0x0
+2019.04.24.11:53:05 Info: add_instance avs_filter5_cra_cra_ring cra_ring_node 
+2019.04.24.11:53:05 Info: set_instance_parameter_value avs_filter5_cra_cra_ring DATA_W 64
+2019.04.24.11:53:05 Info: set_instance_parameter_value avs_filter5_cra_cra_ring RING_ADDR_W 5
+2019.04.24.11:53:05 Info: set_instance_parameter_value avs_filter5_cra_cra_ring CRA_ADDR_W 4
+2019.04.24.11:53:05 Info: set_instance_parameter_value avs_filter5_cra_cra_ring ID_W 4
+2019.04.24.11:53:05 Info: set_instance_parameter_value avs_filter5_cra_cra_ring ID 7
+2019.04.24.11:53:05 Info: add_connection clk_1x.out_clk avs_filter5_cra_cra_ring.clock
+2019.04.24.11:53:05 Info: add_connection reset.out_reset avs_filter5_cra_cra_ring.reset
+2019.04.24.11:53:05 Info: add_connection avs_filter4_cra_cra_ring.ring_out avs_filter5_cra_cra_ring.ring_in
+2019.04.24.11:53:05 Info: add_connection avs_filter5_cra_cra_ring.cra_master shj_system.avs_filter5_cra
+2019.04.24.11:53:05 Info: set_connection_parameter_value avs_filter5_cra_cra_ring.cra_master/shj_system.avs_filter5_cra baseAddress 0x0
+2019.04.24.11:53:05 Info: add_instance avs_filter6_cra_cra_ring cra_ring_node 
+2019.04.24.11:53:05 Info: set_instance_parameter_value avs_filter6_cra_cra_ring DATA_W 64
+2019.04.24.11:53:05 Info: set_instance_parameter_value avs_filter6_cra_cra_ring RING_ADDR_W 5
+2019.04.24.11:53:05 Info: set_instance_parameter_value avs_filter6_cra_cra_ring CRA_ADDR_W 4
+2019.04.24.11:53:05 Info: set_instance_parameter_value avs_filter6_cra_cra_ring ID_W 4
+2019.04.24.11:53:05 Info: set_instance_parameter_value avs_filter6_cra_cra_ring ID 8
+2019.04.24.11:53:05 Info: add_connection clk_1x.out_clk avs_filter6_cra_cra_ring.clock
+2019.04.24.11:53:05 Info: add_connection reset.out_reset avs_filter6_cra_cra_ring.reset
+2019.04.24.11:53:05 Info: add_connection avs_filter5_cra_cra_ring.ring_out avs_filter6_cra_cra_ring.ring_in
+2019.04.24.11:53:05 Info: add_connection avs_filter6_cra_cra_ring.cra_master shj_system.avs_filter6_cra
+2019.04.24.11:53:05 Info: set_connection_parameter_value avs_filter6_cra_cra_ring.cra_master/shj_system.avs_filter6_cra baseAddress 0x0
+2019.04.24.11:53:05 Info: add_instance avs_filter7_cra_cra_ring cra_ring_node 
+2019.04.24.11:53:05 Info: set_instance_parameter_value avs_filter7_cra_cra_ring DATA_W 64
+2019.04.24.11:53:05 Info: set_instance_parameter_value avs_filter7_cra_cra_ring RING_ADDR_W 5
+2019.04.24.11:53:05 Info: set_instance_parameter_value avs_filter7_cra_cra_ring CRA_ADDR_W 4
+2019.04.24.11:53:05 Info: set_instance_parameter_value avs_filter7_cra_cra_ring ID_W 4
+2019.04.24.11:53:05 Info: set_instance_parameter_value avs_filter7_cra_cra_ring ID 9
+2019.04.24.11:53:05 Info: add_connection clk_1x.out_clk avs_filter7_cra_cra_ring.clock
+2019.04.24.11:53:05 Info: add_connection reset.out_reset avs_filter7_cra_cra_ring.reset
+2019.04.24.11:53:05 Info: add_connection avs_filter6_cra_cra_ring.ring_out avs_filter7_cra_cra_ring.ring_in
+2019.04.24.11:53:05 Info: add_connection avs_filter7_cra_cra_ring.cra_master shj_system.avs_filter7_cra
+2019.04.24.11:53:05 Info: set_connection_parameter_value avs_filter7_cra_cra_ring.cra_master/shj_system.avs_filter7_cra baseAddress 0x0
+2019.04.24.11:53:05 Info: add_instance avs_hashjoin_cra_cra_ring cra_ring_node 
+2019.04.24.11:53:05 Info: set_instance_parameter_value avs_hashjoin_cra_cra_ring DATA_W 64
+2019.04.24.11:53:05 Info: set_instance_parameter_value avs_hashjoin_cra_cra_ring RING_ADDR_W 5
+2019.04.24.11:53:05 Info: set_instance_parameter_value avs_hashjoin_cra_cra_ring CRA_ADDR_W 4
+2019.04.24.11:53:05 Info: set_instance_parameter_value avs_hashjoin_cra_cra_ring ID_W 4
+2019.04.24.11:53:05 Info: set_instance_parameter_value avs_hashjoin_cra_cra_ring ID 10
+2019.04.24.11:53:05 Info: add_connection clk_1x.out_clk avs_hashjoin_cra_cra_ring.clock
+2019.04.24.11:53:05 Info: add_connection reset.out_reset avs_hashjoin_cra_cra_ring.reset
+2019.04.24.11:53:05 Info: add_connection avs_filter7_cra_cra_ring.ring_out avs_hashjoin_cra_cra_ring.ring_in
+2019.04.24.11:53:05 Info: add_connection avs_hashjoin_cra_cra_ring.cra_master shj_system.avs_hashjoin_cra
+2019.04.24.11:53:05 Info: set_connection_parameter_value avs_hashjoin_cra_cra_ring.cra_master/shj_system.avs_hashjoin_cra baseAddress 0x0
+2019.04.24.11:53:05 Info: add_connection avs_hashjoin_cra_cra_ring.ring_out cra_root.ring_in
+2019.04.24.11:53:05 Info: add_instance sys_description_rom acl_rom_module 
+2019.04.24.11:53:05 Info: set_instance_parameter_value sys_description_rom INIT_FILE sys_description.hex
+2019.04.24.11:53:05 Info: set_instance_parameter_value sys_description_rom ADDRESS_WIDTH 4
+2019.04.24.11:53:05 Warning: add_connection: Extra arguments ignored <b>clock</b>
+2019.04.24.11:53:05 Info: add_connection clk_1x.out_clk sys_description_rom.clk0
+2019.04.24.11:53:05 Warning: add_connection: Extra arguments ignored <b>reset</b>
+2019.04.24.11:53:05 Info: add_connection reset.out_reset sys_description_rom.reset0
+2019.04.24.11:53:05 Info: set_instance_parameter_value sys_description_rom DATA_WIDTH 64
+2019.04.24.11:53:05 Warning: add_connection: Extra arguments ignored <b>avalon</b>
+2019.04.24.11:53:05 Info: add_connection cra_ring_rom.cra_master sys_description_rom.s0
+2019.04.24.11:53:05 Info: save_system kernel_system.qsys
+2019.04.24.11:53:05 Info: set_instance_parameter_value sys_description_rom ADDRESS_WIDTH 7
+2019.04.24.11:53:05 Info: set_instance_parameter_value cra_ring_rom ROM_W 7
+2019.04.24.11:53:05 Info: set_instance_parameter_value cra_ring_rom ROM_EXT_W 0
+2019.04.24.11:53:05 Info: set_instance_parameter_value cra_root ROM_EXT_W 0
+2019.04.24.11:53:05 Info: save_system kernel_system.qsys
+
